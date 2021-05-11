@@ -27,12 +27,14 @@
 		String memo = rs.getString("memo");
 		String wdate = rs.getString(3);
 		
-		out.print("^^"+ no + ":" + memo + ":(" + wdate + ")<br>");
+		out.print(no + ":" + memo + ":(" + wdate + ")<br>");
 	}
 	rs.close();
 	pstmt.close();
 	con.close();
 	out.print("DB조회 성공");
 %>
+<br>
+<input type = "button" value = "작성" onclick = "location.href='memo01.html'"/>
 </body>
 </html>

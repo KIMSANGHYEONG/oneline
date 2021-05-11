@@ -10,6 +10,7 @@
 </head>
 <body>
 <%
+	response.sendRedirect("memo_list.jsp");
 	request.setCharacterEncoding("UTF-8");
 	String memo = request.getParameter("memo");
 	String url = "jdbc:mysql://localhost/world?characterEncoding=UTF-8&serverTimezone=UTC";
