@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메모장</title>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+	h3 {
+		text-align : center;
+		font-family: 'Dancing Script', cursive;
+	}
+	#reg {
+		width : 250px;
+		margin :10px auto;
+	}
+	p {
+		text-align : center;
+		height : 20px;
+		font-family: 'Nanum Brush Script', cursive;
+		font-size : 25px;
+	}
+	#text {
+		width : 500px;
+		height : 45px;
+		border-bottom : 1px solid green;
+		margin : 10px auto;
+	}
+</style>
+</head>
+<body>
+	<h3>Note Pad</h3><hr style= "border-color: green ;">
+	<form method="post" action="memo_write.jsp">
+		<div id = "reg">
+			<input type="text" name="memo"> 
+			<input type="submit" value="등록">
+		</div>
+		<div id = "text">	
+			<p>
+				(4/7 15:13) 오늘은 금요일이다. <input type="button" value="x">
+			</p>
+		</div>
+		<div id = "text">
+			<p>
+				(4/7 15:17) 수업이 언제 끝나나. <input type="button" value="x">
+			</p>
+		</div>
+		
+</form>
+</body>
+</html>
